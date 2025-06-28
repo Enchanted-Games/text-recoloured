@@ -1,0 +1,15 @@
+use ::java::util::text::TextColor
+
+type RGB255 = (
+    #[color="dec_rgb"] [int @ 0..255] @ 3
+)
+type RGBHEX = (
+    #[color="hex_rgb"] string
+)
+
+type BasicColour = (
+    RGB255 | RGBHEX
+)
+type BasicOrNamedColour = (
+    BasicColour | #[color="named"] TextColor
+)

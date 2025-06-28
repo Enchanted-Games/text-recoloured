@@ -1,0 +1,12 @@
+{
+  "env": {
+    "dependencies": ["@vanilla-resourcepack", "@vanilla-mcdoc"],
+    "customResources": {
+      "eg_text_customiser/color_overrides": {
+        "category": "eg_text_customiser:colour_override",
+        "ext": ".json",
+        "pack": "assets"
+      }
+    }
+  }
+}

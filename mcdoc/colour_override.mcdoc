@@ -1,0 +1,93 @@
+use ::colour_formats::BasicColour
+use ::colour_formats::BasicOrNamedColour
+use ::java::util::DyeColor
+
+//TODO: split the mcdoc and spyglass stuff into a seperate repo
+
+dispatch minecraft:resource["eg_text_customiser:colour_override"] to struct ColourOverrideDefinition {
+	when: WhenPart,
+	replace_with: ReplaceWithPart,
+	properties?: PropertiesPart,
+}
+
+// when part
+struct WhenPart {
+	color?: (ColourTest | [ColourTest]),
+	#[since="1.21.5"]
+	shadow_color?: (ColourTest | [ColourTest]),
+	bold?: boolean,
+	italic?: boolean,
+	underlined?: boolean,
+	strikethrough?: boolean,
+	obfuscated?: boolean,
+	font?: (#[id="font"] string | FontPredicate),
+	decoration_type?: (DecorationType | [DecorationType])
+}
+
+type ColourTest = (BasicOrNamedColour | ColourPredicate)
+
+enum(string) DecorationType {
+	NONE = "none",
+	UNDERLINE = "underline",
+	STRIKETHROUGH = "strikethrough"
+}
+
+//   colour predicate
+struct ColourPredicate {
+	type: #[id] ColourPredicateType,
+	...eg_text_customiser:colour_predicate_type[[type]],
+}
+
+enum(string) ColourPredicateType {
+	SimpleColourPredicate = "eg_text_customiser:simple",
+	SignDyeColourPredicate = "eg_text_customiser:sign_dye",
+	RangeColourPredicate = "eg_text_customiser:range",
+}
+dispatch eg_text_customiser:colour_predicate_type[eg_text_customiser:simple] to struct SimpleColourPredicate {
+	value: BasicOrNamedColour,
+	match_named_colors?: boolean
+}
+dispatch eg_text_customiser:colour_predicate_type[eg_text_customiser:sign_dye] to struct SignDyeColourPredicate {
+	dye?: DyeColor,
+	glowing?: boolean,
+	is_glowing_outline?: boolean
+}
+dispatch eg_text_customiser:colour_predicate_type[eg_text_customiser:range] to struct RangeColourPredicate {
+	min: BasicColour,
+	max: BasicColour,
+	match_named_colors?: boolean
+}
+
+//   font predicate
+struct FontPredicate {
+	type: #[id] FontPredicateType,
+	...eg_text_customiser:font_predicate_type[[type]],
+}
+
+enum(string) FontPredicateType {
+	SimpleFontPredicate = "eg_text_customiser:simple",
+	RegexFontPredicate = "eg_text_customiser:regex"
+}
+dispatch eg_text_customiser:font_predicate_type[eg_text_customiser:simple] to struct SimpleFontPredicate {
+	value: #[id="font"] string
+}
+dispatch eg_text_customiser:font_predicate_type[eg_text_customiser:regex] to struct RegexFontPredicate {
+	regex: struct {
+		namespace?: #[regex_pattern] string,
+		path?: #[regex_pattern] string
+	}
+}
+
+// replace_with part
+struct ReplaceWithPart {
+	color?: BasicColour,
+	shadow_color?: BasicColour
+}
+
+// properties part
+struct PropertiesPart {
+	auto_generate_shadow?: boolean,
+	auto_shadow_multiplier?: float @ 0.0..1.0,
+	#[since="1.21.5"]
+	force_enable_shadow?: boolean
+}
