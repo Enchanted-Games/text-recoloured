@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "pack_format": 55,
+    "supported_formats": [55, 63],
+    "description": [
+      "",
+      {
+        "text": "pastel text",
+        "color": "#fae9ec"
+      },
+      {
+        "text": "\nv0.0 | By Enchanted Games",
+        "color": "gray",
+        "underlined": false
+      }
+    ]
+  }
+}
