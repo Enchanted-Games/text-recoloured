@@ -1,0 +1,12 @@
+{
+  "when": {
+    "color": {
+      "type": "eg_text_customiser:simple",
+      "value": "white",
+      "match_named_colors": false
+    }
+  },
+  "replace_with": {
+    "shadow_color": "#6d6f73"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "when": {
+    "color": "dark_red"
+  },
+  "replace_with": {
+    "color": "#ab1a21",
+    "shadow_color": "#3d0014"
+  }
+}

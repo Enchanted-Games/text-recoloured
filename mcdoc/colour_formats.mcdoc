@@ -4,7 +4,7 @@ type RGB255 = (
     #[color="dec_rgb"] [int @ 0..255] @ 3
 )
 type RGBHEX = (
-    #[color="hex_rgb"] string
+    #[color="hex_rgb"] #[match_regex="^#[0-9a-fA-F]{6}$"] string
 )
 
 type BasicColour = (

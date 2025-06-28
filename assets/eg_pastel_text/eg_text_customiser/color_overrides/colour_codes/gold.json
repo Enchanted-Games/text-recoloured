@@ -1,0 +1,9 @@
+{
+  "when": {
+    "color": "gold"
+  },
+  "replace_with": {
+    "color": "#ffa024",
+    "shadow_color": "#783506"
+  }
+}
