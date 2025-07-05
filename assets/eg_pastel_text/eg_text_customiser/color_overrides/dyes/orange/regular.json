@@ -1,0 +1,12 @@
+{
+  "when": {
+    "color": {
+      "type": "eg_text_customiser:sign_dye",
+      "dye": "orange",
+      "glowing": false
+    }
+  },
+  "replace_with": {
+    "color": "#ffbf52"
+  }
+}

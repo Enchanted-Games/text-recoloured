@@ -1,0 +1,12 @@
+{
+  "when": {
+    "color": {
+      "type": "eg_text_customiser:sign_dye",
+      "dye": "red",
+      "glowing": true
+    }
+  },
+  "replace_with": {
+    "color": "#fc4a44"
+  }
+}
