@@ -2,11 +2,12 @@
   "when": {
     "color": {
       "type": "eg_text_customiser:sign_dye",
-      "dye": "lime",
-      "glowing": true
+      "dye": "light_gray",
+      "glowing": true,
+      "is_glowing_outline": true
     }
   },
   "replace_with": {
-    "color": "#b8f500"
+    "color": "#4f5459"
   }
 }

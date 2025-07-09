@@ -1,6 +1,18 @@
 {
   "when": {
-    "color": "#000000"
+    "color": [
+      "black",
+      {
+        "type": "eg_text_customiser:sign_dye",
+        "dye": "black",
+        "glowing": false
+      },
+      {
+        "type": "eg_text_customiser:sign_dye",
+        "dye": "black",
+        "glowing": true
+      }
+    ]
   },
   "replace_with": {
     "color": "#131517",

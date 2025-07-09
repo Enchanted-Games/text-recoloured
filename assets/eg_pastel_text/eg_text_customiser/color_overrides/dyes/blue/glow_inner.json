@@ -2,11 +2,11 @@
   "when": {
     "color": {
       "type": "eg_text_customiser:sign_dye",
-      "dye": "lime",
+      "dye": "blue",
       "glowing": true
     }
   },
   "replace_with": {
-    "color": "#b8f500"
+    "color": "#2667ff"
   }
 }
