@@ -1,10 +1,10 @@
 {
   "when": {
-    "color": "#ffff00",
+    "color": "#FFFF00",
     "shadow_color": "#3f3f00"
   },
   "replace_with": {
-    "color": "#ffbfd1",
-    "shadow_color": "#ab4b6e"
+    "color": "#ffdf0d",
+    "shadow_color": "#855a04"
   }
 }
