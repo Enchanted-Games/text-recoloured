@@ -1,0 +1,13 @@
+{
+  "when": {
+    "color": {
+      "type": "eg_text_customiser:sign_dye",
+      "dye": "pink",
+      "glowing": true,
+      "is_glowing_outline": true
+    }
+  },
+  "replace_with": {
+    "color": "#ab496d"
+  }
+}

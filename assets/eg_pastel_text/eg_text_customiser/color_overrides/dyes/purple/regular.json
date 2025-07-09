@@ -1,0 +1,12 @@
+{
+  "when": {
+    "color": {
+      "type": "eg_text_customiser:sign_dye",
+      "dye": "purple",
+      "glowing": false
+    }
+  },
+  "replace_with": {
+    "color": "#c194d1"
+  }
+}
