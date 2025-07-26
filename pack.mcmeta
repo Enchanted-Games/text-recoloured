@@ -5,11 +5,22 @@
     "description": [
       "",
       {
-        "text": "pastel text",
-        "color": "#fae9ec"
+        "text": "Improved ",
+        "color": "#FFBFD0",
+        "shadow_color": 4289415790
       },
       {
-        "text": "\nv0.0 | By Enchanted_Games"
+        "text": "Text ",
+        "color": "#FFA4A3",
+        "shadow_color": 4289145901
+      },
+      {
+        "text": "Colours!",
+        "color": "#ffa024",
+        "shadow_color": 4286067974
+      },
+      {
+        "text": "\nv1.0 | By Enchanted_Games"
       }
     ]
   }
