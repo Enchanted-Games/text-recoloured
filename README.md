@@ -6,6 +6,8 @@ This pack focuses on improving the main 16 colours by making them a bit more vib
 It also makes dyed sign text more legible when not glowing, and closer to the dye colour when glowing.
 Some menu text has also been updated, such as the splash, command completion, and link warning text
 
+Compatible with other font resourcepacks such as the ones from vanilla tweaks, faithful, etc
+
 ## Required Mods ⚠️
 
 **This pack requires [Text Customiser](https://modrinth.com/mod/text-customiser) to work**, the pack will not do anything without it!
