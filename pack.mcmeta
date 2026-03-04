@@ -1,7 +1,9 @@
 {
   "pack": {
     "pack_format": 55,
-    "supported_formats": [55, 64],
+    "supported_formats": [55, 75],
+    "min_format": 55,
+    "max_format": 75,
     "description": [
       "",
       {
@@ -20,7 +22,7 @@
         "shadow_color": 4286067974
       },
       {
-        "text": "\nv1.0 | By Enchanted_Games"
+        "text": "\nv1.0.1 | By Enchanted_Games"
       }
     ]
   }
